@@ -6,16 +6,20 @@
   </head>
   <body>
     <div id="cont"></div>
+
+<!--     ////using scripts for react -->
     <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
+
+      // using babel jsx for html
       const element = (
         <div>
           <p className="hello">seize the day</p>
         </div>
       );
-
+// grabing and appending the content
       const reactRoot = ReactDOM.createRoot(document.getElementById("cont"));
       reactRoot.render(element);
     </script>

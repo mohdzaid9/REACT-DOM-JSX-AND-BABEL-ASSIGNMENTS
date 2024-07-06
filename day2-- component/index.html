@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>components and props</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      function navbar() {
+        return <div>iam navbar</div>;
+      }
+
+      function footer() {
+        return <div>iam footer</div>;
+      }
+
+      function app() {
+        <div id="conatiner">
+          <navbar />
+          <footer />
+        </div>;
+      }
+
+      const ReactRoot = ReactDOM.createRoot(document.getElementById("root"));
+      ReactRoot.render(<app />);
+    </script>
+  </body>
+</html>
